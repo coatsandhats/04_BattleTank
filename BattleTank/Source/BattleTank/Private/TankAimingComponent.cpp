@@ -52,7 +52,9 @@ void UTankAimingComponent::AimAt(FVector HitLocation, float LaunchSpeed) {
 	if(bHaveAimSolution) {
 		auto AimDirection = OutLaunchVelocity.GetSafeNormal();
 		MoveBarrelTowards(AimDirection);
-	} 
+	} /*/else {
+		MoveBarrelTowards(GetOwner()->GetActorForwardVector());
+	}     Use if you want barrel to return to default   /*/
 }
 
 void UTankAimingComponent::MoveBarrelTowards(FVector AimDirection) {
