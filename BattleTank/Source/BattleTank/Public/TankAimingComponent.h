@@ -51,9 +51,9 @@ private:
 	bool IsBarrelMoving();
 	FVector AimDirection;
 	UPROPERTY(EditDefaultsOnly, Category = "Firing")
-		int MaxRounds = 3;
+		int32 MaxRounds = 3;
 	UPROPERTY(EditDefaultsOnly, Category = "Firing")
-		int RoundsLeft = 3;
+		int32 RoundsLeft = 3;
 	UPROPERTY(EditDefaultsOnly, Category = "Firing")
 		double ResetAmmoTimeInSeconds = 6;
 	UPROPERTY(EditDefaultsOnly, Category = "Firing")
