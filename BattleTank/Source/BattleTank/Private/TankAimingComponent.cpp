@@ -21,6 +21,7 @@ UTankAimingComponent::UTankAimingComponent()
 void UTankAimingComponent::BeginPlay() {
 	Super::BeginPlay();
 	LastFireTime = FPlatformTime::Seconds();
+	RoundsLeft = MaxRounds;
 }
 
 void UTankAimingComponent::TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) {

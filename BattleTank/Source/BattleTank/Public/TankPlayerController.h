@@ -22,6 +22,9 @@ protected: //subclasses can access because protected aka:Playercontroller_BP
 
 private:
 	void AimTowardsCrosshair();
+	virtual void SetPawn(APawn * InPawn) override;
+	UFUNCTION()
+		void OnPossessedTankDeath();
 	bool GetSightRayHitLocation(FVector& OutHitLocation) const;
 	UPROPERTY(EditDefaultsOnly)
 		float CrosshairXLocation = 0.5;

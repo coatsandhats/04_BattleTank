@@ -52,8 +52,8 @@ private:
 	FVector AimDirection;
 	UPROPERTY(EditDefaultsOnly, Category = "Firing")
 		int32 MaxRounds = 3;
-	UPROPERTY(EditDefaultsOnly, Category = "Firing")
-		int32 RoundsLeft = 3;
+	UPROPERTY(VisibleAnywhere, Category = "Firing")
+		int32 RoundsLeft;
 	UPROPERTY(EditDefaultsOnly, Category = "Firing")
 		double ResetAmmoTimeInSeconds = 6;
 	UPROPERTY(EditDefaultsOnly, Category = "Firing")
